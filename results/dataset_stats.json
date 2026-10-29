@@ -1,0 +1,60 @@
+{
+  "train": {
+    "queries": 45000,
+    "docs": 50291,
+    "avg_words_query": 136.3,
+    "avg_words_doc": 26.4
+  },
+  "validation": {
+    "queries": 3900,
+    "docs": 14138,
+    "avg_words_query": 136.3,
+    "avg_words_doc": 25.4
+  },
+  "test": {
+    "queries": 3600,
+    "docs": 13297,
+    "avg_words_query": 136.4,
+    "avg_words_doc": 25.4
+  },
+  "test_extra": {
+    "answer_options": 18000,
+    "correct_also_wrong_elsewhere_queries": 753,
+    "correct_also_wrong_elsewhere_unique": 752,
+    "label_counts": [
+      721,
+      725,
+      727,
+      713,
+      714
+    ],
+    "share_docs_start_holding_that": 0.748,
+    "example_query_0": {
+      "context": "v. Power Auth. of the State of New York, 81 N.Y.2d 649, 652, 602 N.Y.S.2d 588, 621 N.E.2d 1195, 1196 (N.Y.1993) (same). These cases teach that fair market value is not to be determined in a rarefied realm of abstract calculation, but from the perspective of a hypothetical buyer in the real world \u2014 even if her perception of value is based partially on misinformation or (arguably) exaggerated fears about uncertain future events. Other courts, in the same or similar circumstances, have held that the anticipation of increased interference or potential hazards on the land remaining after a taking, which one court has labeled \u201cstigma damages,\u201d can be considered in assessing severance damages. See, e.g., Vector Pipeline, L.P., v. 68.55 Acres of Land, 157 F.Supp.2d 949, 957 (N.D.Ill.2001) (<HOLDING>); United States v. 14.38 Acres of Land, 80 F.3d",
+      "options": [
+        "holding that actual damages under respa included emotional damages",
+        "holding that increased fear of flooding was a matter that factfinder could properly consider in assessing severance damages",
+        "holding that local buyers fear of possible knapweed infestation legitimately affected calculation of severance damages",
+        "recognizing concept of stigma damages as they apply to property which is in fact contaminated",
+        "holding that stigma damages were properly included in calculation of severance damages where proximity of gas pipeline could trigger fears about possible mishaps"
+      ],
+      "label": 4,
+      "correct_tokens": [
+        "stigma",
+        "damag",
+        "properli",
+        "includ",
+        "calcul",
+        "sever",
+        "damag",
+        "proxim",
+        "ga",
+        "pipelin",
+        "trigger",
+        "fear",
+        "possibl",
+        "mishap"
+      ]
+    }
+  }
+}

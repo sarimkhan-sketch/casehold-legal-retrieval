@@ -1,0 +1,11 @@
+{
+  "tfidf_index_s": 0.21,
+  "tfidf_score_s": 0.57,
+  "bm25_index_s": 0.15,
+  "bm25_score_s": 0.42,
+  "dense_encode_s": 10.4,
+  "finetuned_encode_s": 10.11,
+  "cross_encoder_s": 185.02,
+  "n_queries": 3600,
+  "n_docs": 13297
+}

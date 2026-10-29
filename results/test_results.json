@@ -1,0 +1,439 @@
+{
+  "config": {
+    "query_length": {
+      "full": 0.3003,
+      "last_64": 0.2781,
+      "last_32": 0.1538
+    },
+    "bm25_grid": {
+      "k1=0.2,b=0.3": 0.2859,
+      "k1=0.2,b=0.5": 0.2915,
+      "k1=0.2,b=0.7": 0.2984,
+      "k1=0.2,b=0.8": 0.2999,
+      "k1=0.2,b=0.9": 0.3022,
+      "k1=0.2,b=1.0": 0.3042,
+      "k1=0.3,b=0.3": 0.2888,
+      "k1=0.3,b=0.5": 0.2975,
+      "k1=0.3,b=0.7": 0.3034,
+      "k1=0.3,b=0.8": 0.3052,
+      "k1=0.3,b=0.9": 0.3062,
+      "k1=0.3,b=1.0": 0.3069,
+      "k1=0.4,b=0.3": 0.2902,
+      "k1=0.4,b=0.5": 0.2996,
+      "k1=0.4,b=0.7": 0.3049,
+      "k1=0.4,b=0.8": 0.3064,
+      "k1=0.4,b=0.9": 0.3076,
+      "k1=0.4,b=1.0": 0.3078,
+      "k1=0.6,b=0.3": 0.2903,
+      "k1=0.6,b=0.5": 0.3017,
+      "k1=0.6,b=0.7": 0.3052,
+      "k1=0.6,b=0.8": 0.3057,
+      "k1=0.6,b=0.9": 0.307,
+      "k1=0.6,b=1.0": 0.3063,
+      "k1=0.8,b=0.3": 0.2898,
+      "k1=0.8,b=0.5": 0.2993,
+      "k1=0.8,b=0.7": 0.3035,
+      "k1=0.8,b=0.8": 0.3049,
+      "k1=0.8,b=0.9": 0.3042,
+      "k1=0.8,b=1.0": 0.303,
+      "k1=1.0,b=0.3": 0.2872,
+      "k1=1.0,b=0.5": 0.2994,
+      "k1=1.0,b=0.7": 0.3034,
+      "k1=1.0,b=0.8": 0.3021,
+      "k1=1.0,b=0.9": 0.3002,
+      "k1=1.0,b=1.0": 0.2975,
+      "k1=1.2,b=0.3": 0.2847,
+      "k1=1.2,b=0.5": 0.2975,
+      "k1=1.2,b=0.7": 0.3003,
+      "k1=1.2,b=0.8": 0.2992,
+      "k1=1.2,b=0.9": 0.296,
+      "k1=1.2,b=1.0": 0.2919,
+      "k1=1.5,b=0.3": 0.2814,
+      "k1=1.5,b=0.5": 0.2935,
+      "k1=1.5,b=0.7": 0.2952,
+      "k1=1.5,b=0.8": 0.2949,
+      "k1=1.5,b=0.9": 0.29,
+      "k1=1.5,b=1.0": 0.2836,
+      "k1=2.0,b=0.3": 0.2735,
+      "k1=2.0,b=0.5": 0.287,
+      "k1=2.0,b=0.7": 0.2885,
+      "k1=2.0,b=0.8": 0.2881,
+      "k1=2.0,b=0.9": 0.2813,
+      "k1=2.0,b=1.0": 0.2728
+    },
+    "bm25": {
+      "k1": 0.4,
+      "b": 1.0,
+      "mrr": 0.3078
+    },
+    "tfidf_variants": {
+      "tokens_only": 0.2805,
+      "stop_words": 0.2743,
+      "stop_words+stem": 0.3003
+    },
+    "tfidf": {
+      "remove_stop": true,
+      "use_stem": true
+    },
+    "dense_models": {
+      "all-MiniLM-L6-v2": 0.2281,
+      "bge-small-en-v1.5": 0.1579,
+      "bge-small-en-v1.5 + instruction": 0.1759
+    },
+    "rrf_k": {
+      "1": 0.3298,
+      "5": 0.3306,
+      "10": 0.3306,
+      "20": 0.3257,
+      "30": 0.3229,
+      "60": 0.3183,
+      "100": 0.3155
+    },
+    "rrf_best_k": 5,
+    "query_words": null,
+    "rrf_main_k": 60
+  },
+  "index": {
+    "terms": 7233,
+    "postings": 150284,
+    "avg_terms_per_doc": 12.557268556817327,
+    "avg_postings_per_term": 20.777547352412554
+  },
+  "bm25_matrix_vs_loop_max_abs_diff": 7.106642861742785e-06,
+  "full_pool": {
+    "TF-IDF": {
+      "P@10": 0.04877777777777777,
+      "R@1": 0.22666666666666666,
+      "R@10": 0.48777777777777775,
+      "R@100": 0.7280555555555556,
+      "MAP": 0.3166251825759494,
+      "nDCG@10": 0.3491786264562244,
+      "median_rank": 11.0,
+      "wilcoxon_p_vs_bm25": 0.4112787238609853
+    },
+    "BM25": {
+      "P@10": 0.049166666666666664,
+      "R@1": 0.2313888888888889,
+      "R@10": 0.49166666666666664,
+      "R@100": 0.7091666666666666,
+      "MAP": 0.3200679731001388,
+      "nDCG@10": 0.3536911866537802,
+      "median_rank": 11.0
+    },
+    "Sentence Transformer": {
+      "P@10": 0.036944444444444446,
+      "R@1": 0.1613888888888889,
+      "R@10": 0.36944444444444446,
+      "R@100": 0.6038888888888889,
+      "MAP": 0.23365762901453818,
+      "nDCG@10": 0.2584566048386328,
+      "median_rank": 33.0,
+      "wilcoxon_p_vs_bm25": 1.0277209388847372e-65
+    },
+    "Hybrid RRF (TF-IDF + BM25 + Dense)": {
+      "P@10": 0.05255555555555555,
+      "R@1": 0.2288888888888889,
+      "R@10": 0.5255555555555556,
+      "R@100": 0.7625,
+      "MAP": 0.3272897560431222,
+      "nDCG@10": 0.36651696464532557,
+      "median_rank": 9.0,
+      "wilcoxon_p_vs_bm25": 3.1930761663612823e-16
+    },
+    "Hybrid RRF, k = 5": {
+      "P@10": 0.05352777777777777,
+      "R@1": 0.24138888888888888,
+      "R@10": 0.5352777777777777,
+      "R@100": 0.7591666666666667,
+      "MAP": 0.3405391669814606,
+      "nDCG@10": 0.3798126622491024,
+      "median_rank": 8.0,
+      "wilcoxon_p_vs_bm25": 7.806190242948828e-21
+    },
+    "Hybrid RRF (BM25 + Dense)": {
+      "P@10": 0.04883333333333334,
+      "R@1": 0.22055555555555556,
+      "R@10": 0.48833333333333334,
+      "R@100": 0.7472222222222222,
+      "MAP": 0.3140667317913397,
+      "nDCG@10": 0.34690723571075655,
+      "median_rank": 11.0,
+      "wilcoxon_p_vs_bm25": 0.6282664147663726
+    },
+    "Hybrid + cross-encoder": {
+      "P@10": 0.03916666666666667,
+      "R@1": 0.08833333333333333,
+      "R@10": 0.39166666666666666,
+      "R@100": 0.7625,
+      "MAP": 0.18110205441392166,
+      "nDCG@10": 0.21515908479080428,
+      "median_rank": 15.0,
+      "wilcoxon_p_vs_bm25": 5.033385639497883e-66
+    },
+    "Dense, fine-tuned (ext.)": {
+      "P@10": 0.058111111111111106,
+      "R@1": 0.3,
+      "R@10": 0.5811111111111111,
+      "R@100": 0.8016666666666666,
+      "MAP": 0.39491786996460493,
+      "nDCG@10": 0.43240763887456307,
+      "median_rank": 5.0,
+      "wilcoxon_p_vs_bm25": 1.9070914849231934e-45
+    },
+    "Hybrid RRF (BM25 + fine-tuned Dense)": {
+      "P@10": 0.0596111111111111,
+      "R@1": 0.2980555555555556,
+      "R@10": 0.5961111111111111,
+      "R@100": 0.8211111111111111,
+      "MAP": 0.4007734931313765,
+      "nDCG@10": 0.43992178332065374,
+      "median_rank": 5.0,
+      "wilcoxon_p_vs_bm25": 4.3363000045392647e-162
+    }
+  },
+  "five_choice": {
+    "TF-IDF": {
+      "Accuracy": 0.5536111111111112,
+      "MRR": 0.7257962962962964,
+      "R@2": 0.7638888888888888,
+      "nDCG@5": 0.7945491677749035
+    },
+    "BM25": {
+      "Accuracy": 0.5794444444444444,
+      "MRR": 0.7445833333333334,
+      "R@2": 0.7880555555555555,
+      "nDCG@5": 0.8087934430124785
+    },
+    "Sentence Transformer": {
+      "Accuracy": 0.5233333333333333,
+      "MRR": 0.7051527777777777,
+      "R@2": 0.7377777777777778,
+      "nDCG@5": 0.7789856968174965
+    },
+    "Dense, fine-tuned (ext.)": {
+      "Accuracy": 0.6369444444444444,
+      "MRR": 0.7848101851851852,
+      "R@2": 0.8416666666666667,
+      "nDCG@5": 0.8391721722984481
+    },
+    "Hybrid RRF (TF-IDF + BM25 + Dense)": {
+      "Accuracy": 0.5836111111111111,
+      "MRR": 0.7460555555555556,
+      "R@2": 0.7841666666666667,
+      "nDCG@5": 0.8098534942178099
+    },
+    "Hybrid RRF (BM25 + Dense)": {
+      "Accuracy": 0.5633333333333334,
+      "MRR": 0.7361712962962962,
+      "R@2": 0.7869444444444444,
+      "nDCG@5": 0.8025599549314465
+    },
+    "Hybrid RRF (BM25 + fine-tuned Dense)": {
+      "Accuracy": 0.6236111111111111,
+      "MRR": 0.7765092592592593,
+      "R@2": 0.8336111111111111,
+      "nDCG@5": 0.8329470788004123
+    },
+    "Cross-encoder (ms-marco)": {
+      "Accuracy": 0.38555555555555554,
+      "MRR": 0.604537037037037,
+      "R@2": 0.6108333333333333,
+      "nDCG@5": 0.7026105867333285
+    }
+  },
+  "error_analysis": {
+    "bm25_top1_dense_not": 461,
+    "dense_top1_bm25_not": 209,
+    "both_top1": 372,
+    "neither_top10": 1589,
+    "median_rank": {
+      "TF-IDF": 11.0,
+      "BM25": 11.0,
+      "Sentence Transformer": 33.0,
+      "Dense, fine-tuned": 5.0,
+      "Hybrid RRF": 9.0,
+      "Hybrid RRF best k": 8.0,
+      "Hybrid RRF BM25+Dense": 11.0,
+      "Hybrid RRF (BM25 + fine-tuned)": 5.0,
+      "Hybrid + cross-encoder": 15.0
+    },
+    "hybrid_misses": 2776,
+    "hybrid_miss_top1_is_own_distractor": 0.13256484149855907,
+    "hybrid_miss_top1_jaccard_with_correct": 0.09394829811444923,
+    "bm25_mrr_by_holding_length": {
+      "<=15": {
+        "n": 657,
+        "mrr": 0.1987183295757223
+      },
+      "16-25": {
+        "n": 1304,
+        "mrr": 0.31793549332455073
+      },
+      "26-40": {
+        "n": 1196,
+        "mrr": 0.355301884772377
+      },
+      ">40": {
+        "n": 443,
+        "mrr": 0.41119147437082
+      }
+    },
+    "examples_bm25_wins": [
+      {
+        "query_id": 1645,
+        "bm25_rank": 1,
+        "dense_rank": 4347,
+        "hybrid_rank": 2,
+        "context_tail": "further fact finding, and stating that \u201c[i]f the court does find support in the record for its conclusion that Barton\u2019s rehabilitative efforts are extraordinary, reducing Barton\u2019s sentence from a minimum of fifteen months\u2019 imprisonment to probation would not be unreasonable.\u201d) See also United States v. Simpson, 7 F.3d 813, 819-20 (8th Cir.1993) (<HOLDING>). In this regard I have especially considered:",
+        "correct": "recognizing that postoffense rehabilitative efforts while normally not grounds for departure may support departure in extraordinary circumstances and noting that the totality of the circumstances may justify a departure where a single circumstance is not alone sufficient",
+        "bm25_top1": "recognizing that postoffense rehabilitative efforts while normally not grounds for departure may support departure in extraordinary circumstances and noting that the totality of the circumstances may justify a departure where a single circumstance is not alone sufficient",
+        "dense_top1": "holding that the district court did not err in using a previous conviction for gross sexual imposition to enhance a sentence for receiving child pornography"
+      },
+      {
+        "query_id": 222,
+        "bm25_rank": 1,
+        "dense_rank": 4106,
+        "hybrid_rank": 12,
+        "context_tail": "and Lowenfield v. Butler, 843 F.2d 183, 187 (5th Cir.1988) (both quoting and relying on this excerpt from Justice Powell\u2019s concurrence in Ford, 477 U.S. at 422, 106 S.Ct. 2595 (Powell, J., concurring), in denying competency-to-be-executed habeas relief); see also Fearance, 56 F.3d at 640 and Barnard, 13 F.3d at 876 n. 2 (<HOLDING>). Counsel for Panetti suggests this Court",
+        "correct": "holding that the fifth circuit has adopted the powell concurrence as the standard for competency to be executed",
+        "bm25_top1": "holding that the fifth circuit has adopted the powell concurrence as the standard for competency to be executed",
+        "dense_top1": "holding that the eighth amendment prohibits execution of persons whose mental illness prevents them from comprehending the reasons for the penalty and its implications"
+      },
+      {
+        "query_id": 1034,
+        "bm25_rank": 1,
+        "dense_rank": 3470,
+        "hybrid_rank": 8,
+        "context_tail": "Because of the strikingly unsanitary conditions under which the officials searched Thompson and performed the urinalysis, I believe that the prison officials in the instant case violated clearly established law. Nor could the prison officials reasonably have believed that their conduct was lawful. See Act Up!/Portland v. Bagley, 988 F.2d 868, 871 (9th Cir.1993) (<HOLDING>). The California Department of Corrections",
+        "correct": "holding that if official has violated clearly established law he is entitled to qualified immunity only if reasonable official could have believed conduct was lawful",
+        "bm25_top1": "holding that if official has violated clearly established law he is entitled to qualified immunity only if reasonable official could have believed conduct was lawful",
+        "dense_top1": "holding that acquiescence to a strip and body cavity search did not extend the scope of defendants consent to search his person because of the highly intrusive nature of the search"
+      },
+      {
+        "query_id": 1468,
+        "bm25_rank": 1,
+        "dense_rank": 2789,
+        "hybrid_rank": 2,
+        "context_tail": "and Felicia Stokes testimony and the RAC handouts, that RAC has not complied with this notification. Even assuming the defendants had ceased the allegedly illegal conduct, we will not dismiss the claims as moot if the harm is \u201ccapable of repetition, yet evading review.\u201d Southern Pacific, 219 U.S. at 515, 31 S.Ct. at 283 (<HOLDING>). Otherwise, such orders effectively would",
+        "correct": "holding ease not moot when challenged administrative order expired because icc proceedings are continuing and their consideration ought not be defeated by short term orders capable of repetition yet evading review",
+        "bm25_top1": "holding ease not moot when challenged administrative order expired because icc proceedings are continuing and their consideration ought not be defeated by short term orders capable of repetition yet evading review",
+        "dense_top1": "holding that the plaintiffs complaint failed to state a claim for purposeful and unlawful discrimination"
+      },
+      {
+        "query_id": 543,
+        "bm25_rank": 1,
+        "dense_rank": 2107,
+        "hybrid_rank": 7,
+        "context_tail": "of public ... agencies setting forth ... matters observed pursuant to duty imposed by law as to which matters there was a duty to report ... unless ... circumstances indicate lack of trustworthiness.\u201d Fed. R. Ev. 803(8). See also Bridgeway Corp. v. Citibank, 201 F.3d 134, 142 (2nd Cir.2000) (<HOLDING>). 25 . Garro Depo. (Apr. 7, 2002), 137. 26 .",
+        "correct": "holding state department country report on fairness of liberian judicial system admissible",
+        "bm25_top1": "holding state department country report on fairness of liberian judicial system admissible",
+        "dense_top1": "holding that a state agencys violations of its own internal regulations did not establish a due process violation or otherwise give rise to a constitutional claim"
+      }
+    ],
+    "examples_dense_wins": [
+      {
+        "query_id": 2356,
+        "bm25_rank": 2893,
+        "dense_rank": 1,
+        "hybrid_rank": 84,
+        "context_tail": "all Moslems must fast during the daylight hours. Indulgence of any sort is forbidden during the fast. There are only a few who are exempt, e.g., soldiers and the sick.\u201d See Th .1997) (inmate's First Amendment rights not violated by Christmas party). Cf. Bridenbaugh v. O\u2019Bannon, 185 F.3d 796 (7th Cir.1999) (<HOLDING>); Cammack v. Waihee, 932 F.2d 765, 780 (9th",
+        "correct": "holding that recognition of good friday as a legal holiday did not violate establishment clause",
+        "bm25_top1": "holding that withdrawal of aclus paralegals contact visits with inmates even if retaliatory was not sufficiently adverse to the aclu to implicate first amendment right to petition",
+        "dense_top1": "holding that recognition of good friday as a legal holiday did not violate establishment clause"
+      },
+      {
+        "query_id": 296,
+        "bm25_rank": 1883,
+        "dense_rank": 1,
+        "hybrid_rank": 68,
+        "context_tail": "that mock marriage, and no court has so held. The district court\u2019s judgment is AFFIRMED. 1 . The alleged fact dispute does not exist, nor would it be material if it did. While Coker and Golden maintain they were ordered to \"cease all contact\u201d with the other (10th Cir. 2008) (<HOLDING>). 3 . Of course, even if such rights existed",
+        "correct": "holding that governmental actions restricting police officers sexual conduct of an extramarital affair were reasonable",
+        "bm25_top1": "holding nonmoving partys affidavit created genuine issue of material fact as to the existence of an employment relationship",
+        "dense_top1": "holding that governmental actions restricting police officers sexual conduct of an extramarital affair were reasonable"
+      },
+      {
+        "query_id": 2097,
+        "bm25_rank": 1267,
+        "dense_rank": 1,
+        "hybrid_rank": 73,
+        "context_tail": "taxes. Bill\u2019s Forestry appealed. Bill\u2019s Forestry, through counsel, notified IRS Appeals Officer Steve Cantrell that it considered the IRS\u2019s position to be contrary to Grady Felder Trucking Co. v. United States, 218 Ct.Cl. 645 (1978), and Jones v. United States, 79-1 U.S. Tax Cases (CCH) \u00b6 9,120, 1978 WL 1245 (E.D.Tex.1978) (<HOLDING>), rev\u2019d in part, 613 F.2d 1311 (5th Cir.1980)",
+        "correct": "holding that a tree cutter was an independent contractor not an employee for purposes of the taxpayers withholding of income fica and futa taxes but denying the taxpayer attorneys fees incurred in litigating the action",
+        "bm25_top1": "holding that irs was bound by plan and bankruptcy codes method of determining amount of nondischargeable claim where irs had filed proof of claim for nondischargeable tax debt",
+        "dense_top1": "holding that a tree cutter was an independent contractor not an employee for purposes of the taxpayers withholding of income fica and futa taxes but denying the taxpayer attorneys fees incurred in litigating the action"
+      },
+      {
+        "query_id": 984,
+        "bm25_rank": 1027,
+        "dense_rank": 1,
+        "hybrid_rank": 63,
+        "context_tail": "due to counsel\u2019s serious medical situation. Unavoidable health concerns are a valid reason for granting a reasonable delay. United States v. Trotman, 406 Fed.Appx. 799, 805 (4th Cir.2011) (unpublished); see also United States v. Hale, 685 F.3d 522, 535 (5th Cir.2012); United States v. DiTommaso, 817 F.2d 201, 210 (2d Cir.1987) (<HOLDING>). The district court did not clearly err in",
+        "correct": "holding that a seven week suspension of the speedy trial clock was warranted under the ends of justice provision where the chief prosecutor was ill and new assistant prosecutors required time to prepare for trial",
+        "bm25_top1": "holding waiver of right to counsel not voluntary and knowing when defendant terminated counsel and requested another attorney but the trial court would allow delay and appointment only upon waiver of speedy trial right",
+        "dense_top1": "holding that a seven week suspension of the speedy trial clock was warranted under the ends of justice provision where the chief prosecutor was ill and new assistant prosecutors required time to prepare for trial"
+      }
+    ],
+    "examples_all_fail": [
+      {
+        "query_id": 3084,
+        "bm25_rank": 10812,
+        "dense_rank": 13114,
+        "hybrid_rank": 1000000000,
+        "context_tail": "have the authority to settle liability claims for Defendant. If Markwell was merely a broker rather an agent, Mark-well\u2019s knowledge of Plaintiffs occurrence may not be imputed to Defendant. Economy Fire & Cas. Co. v. Bassett, 170 Ill.A Ill.App.3d 1040, 1043, 506 N.E.2d 627, 629, 106 Ill.Dec. 827, 829 (1987) (<HOLDING>); see also Equity Gen. Ins. Co. v. Patis, 119",
+        "correct": "holding that a 13 month delay was unreasonable",
+        "bm25_top1": "holding that a broker may be a statutory agent for an insurance company pursuant to section 626842 florida statutes 1989 or be clothed with actual or apparent authority so that the brokers acts may be binding on the insurance company",
+        "dense_top1": "holding that even if an insurance broker is the agent of the insurance company for purposes of soliciting and procuring the policy that would not necessarily make the broker the agent of the insurance company for the purpose of receiving notice of suits and claims"
+      },
+      {
+        "query_id": 2024,
+        "bm25_rank": 10807,
+        "dense_rank": 11007,
+        "hybrid_rank": 1000000000,
+        "context_tail": "volumes of documentation, was filed by the Respondent only as a result of the Courts insistence (order of November 26, 1996) in the face of the Respondents foot dragging and the Claimants\u2019 cavalierly passive discovery efforts. We have been tolerant of the Claimants, who recog 967), 38 Ill. 2d 31, 230 N.E.2d 173 (<HOLDING>). Claimants do not cite other prominent",
+        "correct": "recognizing implied private action under federal safety appliance act",
+        "bm25_top1": "holding that the delivery of an eeoc decision to the former attorney of a claimant did not constitute notice to the claimant",
+        "dense_top1": "holding that district court may consider documents referred to in plaintiffs complaint and central to his claim"
+      },
+      {
+        "query_id": 2595,
+        "bm25_rank": 11598,
+        "dense_rank": 10610,
+        "hybrid_rank": 1000000000,
+        "context_tail": "addition of the words \u201cor actual fraud\u201d probably makes no change in the law as it existed prior to enactment of the [Bankruptcy Act of 1978] because false pretenses and representations were construed to mean acts involving moral turpitude or intentional wrong.... In any event, section 523(a)(2)(A) was intend (7th Cir.) (<HOLDING>), cert. denied, 488 U.S. 908, 109 S.Ct. 260,",
+        "correct": "holding that jurys finding was binding on court considering claim for equitable relief",
+        "bm25_top1": "holding that a person violates the bank fraud statute when he knowingly executes a scheme to obtain money from a financial institution by means of false or fraudulent representations if a defendant knowingly provided materially false information in order to induce the loan the crime is complete and it is irrelevant whether or not he intended to repay or was capable of repaying it",
+        "dense_top1": "holding that a person violates the bank fraud statute when he knowingly executes a scheme to obtain money from a financial institution by means of false or fraudulent representations if a defendant knowingly provided materially false information in order to induce the loan the crime is complete and it is irrelevant whether or not he intended to repay or was capable of repaying it"
+      },
+      {
+        "query_id": 3294,
+        "bm25_rank": 9529,
+        "dense_rank": 12931,
+        "hybrid_rank": 1000000000,
+        "context_tail": "Joyes\u2019 outstanding taxes give rise to a post-petition claim pursuant to section 1305(a)(1) depends on when these taxes became \u201cpayable\u201d for the purpose of that section. We have yet to construe the term \u201cpayable\u201d as used in section 1305(a)(1). See In re Savaria, 317 B.R. 395, 401 (9th Cir. BAP 2004) (<HOLDING>). However, the Court of Appeals for the Fifth",
+        "correct": "recognizing without resolving the split in authority on the meaning of the word",
+        "bm25_top1": "holding that the district court had bankruptcy jurisdiction over a professional malpractice action filed by a title 11 debtor against the law firm that represented him in his bankruptcy case under section 1334b because the malpractice claim arose in the bankruptcy case",
+        "dense_top1": "holding that a debtors entitlement to an exemption under  522d1 is determined as of the filing date of  a bankruptcy petition"
+      },
+      {
+        "query_id": 3118,
+        "bm25_rank": 9066,
+        "dense_rank": 12220,
+        "hybrid_rank": 1000000000,
+        "context_tail": "that the Eighth Amendment is not violated by the imposition of a mandatory sentence of life, with the possibility of parole. See Harmelin, 501 U.S. at 994-95, 111 S.Ct. 2680. We overrule Lopez\u2019s third and fourth issues. C. Due process guarantees In his fifth'a Ct. 1586, 1591, 29 L.Ed.2d 90 (1971) (<HOLDING>), to argue that it is appropriate to deviate",
+        "correct": "holding motorist entitled to hearing before taking his license under statute that required loss of license if uninsured driver involved in an accident",
+        "bm25_top1": "holding that graham which prohibited the imposition of a life without parole sentence on a juvenile offender who did not commit homicide does not apply to a lengthy termofyears sentence that might constitute a de facto life sentence",
+        "dense_top1": "holding that the due process clause of the fourteenth amendment incorporates the eighth amendments guarantee against cruel and unusual punishment"
+      }
+    ]
+  },
+  "timings": {
+    "tfidf_index_s": 0.21,
+    "tfidf_score_s": 0.57,
+    "bm25_index_s": 0.15,
+    "bm25_score_s": 0.42,
+    "dense_encode_s": 10.4,
+    "finetuned_encode_s": 10.11,
+    "cross_encoder_s": 185.02,
+    "n_queries": 3600,
+    "n_docs": 13297
+  }
+}

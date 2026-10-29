@@ -1,0 +1,8 @@
+[project]
+name = "casehold-ir"
+version = "1.0.0"
+description = "Legal holding retrieval on CaseHOLD: TF-IDF, BM25, Sentence Transformer and RRF"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["casehold_ir"]
