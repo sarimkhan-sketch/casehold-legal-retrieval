@@ -3,17 +3,21 @@
 Run from the repository root:  streamlit run app/search_app.py
 """
 import json
+import sys
 import time
 from pathlib import Path
 
 import numpy as np
 import streamlit as st
 
-from casehold_ir.data import load_split
-from casehold_ir.models import DenseModel, TfidfModel, build_bm25
-from casehold_ir.preprocess import tokenize
-
 ROOT = Path(__file__).resolve().parent.parent
+# Make casehold_ir importable without `pip install -e .` (e.g. on Streamlit Cloud).
+sys.path.insert(0, str(ROOT))
+
+from casehold_ir.data import load_split  # noqa: E402
+from casehold_ir.models import DenseModel, TfidfModel, build_bm25  # noqa: E402
+from casehold_ir.preprocess import tokenize  # noqa: E402
+
 FINETUNED = ROOT / "models" / "minilm-casehold"
 TOP_N = 10
 DEPTH = 1000
